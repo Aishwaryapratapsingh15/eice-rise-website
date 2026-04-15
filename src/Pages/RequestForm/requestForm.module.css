@@ -1,0 +1,748 @@
+.formHeadingBox {
+    margin-top: 9rem;
+}
+
+.formHeading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 1rem;
+
+}
+
+.formSubheading {
+    text-align: center;
+    /* color: #726e6e99; */
+    color: #3339;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.formContainer {
+
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.17);
+    width: 100%;
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+
+
+}
+
+
+.FormInnerHeading {
+    color: #3339;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+
+}
+
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.line1Input {
+    width: 33rem;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 0.4rem;
+
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.line2Input {
+    width: 21.7rem;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 0.4rem;
+
+}
+
+.phoneNoAndCodeBox {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 0.4rem;
+}
+
+.phoneNo {
+    width: 13rem;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+
+}
+
+.phoneCode {
+   
+
+    width: 7rem;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.line3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+select option:disabled {
+    color: grey;
+    /* Color for the "Please Select" placeholder */
+}
+
+
+select {
+    color: black;
+    padding-right: 30px;
+    /* Default color for the select text */
+}
+
+select option {
+    color: black;
+    /* Color for the option text */
+}
+
+.line3Input {
+
+    width: 33rem;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 0.4rem;
+
+}
+
+.line6Input {
+
+    width: 33rem;
+    font-size: 16px;
+
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    border-radius: 5px;
+    margin-top: 0.4rem;
+
+}
+
+.requirement {
+    margin-bottom: 1.5rem;
+}
+
+.requirementInput {
+    width: 68rem;
+    font-size: 16px;
+    /* padding: 12px 10px; */
+    border-radius: 5px;
+    margin-top: 0.4rem;
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.messageTextArea {
+    margin-bottom: 1.5rem;
+}
+
+.messageTextAreaInput {
+    width: 68rem;
+    font-size: 16px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    margin-top: 0.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    resize: none;
+
+}
+
+.messageTextAreaInput::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c2c0c0;
+}
+
+input[type="text"]::placeholder {
+    color: #c2c0c0;
+}
+
+input[type="email"]::placeholder {
+    color: #c2c0c0;
+}
+
+input[type="tel"]::placeholder {
+    color: #c2c0c0;
+}
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.checkBox {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    padding: 5px 2px;
+    color: #3339;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    /* Scales the checkbox to 1.5 times its size */
+    accent-color: #3339;
+}
+
+
+
+.submitButtonConatiner {
+    display: flex;
+    /* background-color: rgba(1, 176, 241, 1); */
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 10px;
+    background-color: rgba(1, 176, 241, 1);
+    padding: 1rem 6rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem; */
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttonInputBox {
+    font-size: 17px;
+    border: none;
+    color: white;
+    background: rgba(1, 176, 241, 1);
+    padding: 1rem 6rem;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.buttonInputBox:hover
+{
+    background-color: #5FCDF6;
+}
+
+
+
+
+
+.demoArrowButton {
+    padding-top: 3.5px;
+    color: white;
+    position: absolute;
+    left: 40px;
+    /* top: 1px; */
+
+}
+
+
+
+
+
+
+.section5 {
+    margin-bottom: 5rem;
+
+}
+
+
+
+.reviewSection {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+@media (max-width : 800px) {
+    .reviewSection {
+        display: none;
+    }
+
+
+}
+
+@media (min-width : 800px) {
+
+    .reviewSectionForPhone {
+        display: none;
+    }
+} */
+
+.section5Heading {
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+.section5Subheading {
+
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.quoteHeading {
+    text-align: center;
+    margin: 1rem 0px;
+    font-size: 18px;
+    padding: 0px 3rem;
+}
+
+.feedBack {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 30px;
+    user-select: none;
+
+}
+
+.feedBackArticleBox {
+    width: 370px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.FAQsection {
+    /* margin-top: 58px; */
+    padding: 0px 74px;
+    margin-bottom: 70px;
+}
+
+.FAQHeading {
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.FAQContainer {
+    margin-top: 1rem;
+}
+
+.contactUsBackground {
+    background-color: #f5f5f5;
+    padding-top: 1.7rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+
+.contactUsHeading {
+    font-weight: 700;
+    font-size: 28px;
+
+}
+
+
+.contactUsBox {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.ContactUsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4.5rem;
+    row-gap: 2rem;
+
+}
+
+.key {
+    font-size: 1.4rem;
+}
+
+.value {
+    font-size: 1.1rem;
+}
+
+@media (min-width :2000px) {
+    .LaptopImgSection {
+        display: flex;
+        justify-content: center;
+        width: 70rem;
+        margin: 0px auto;
+    }
+
+}
+
+.LaptopImg {
+    display: flex;
+    width: 90%;
+    justify-content: center
+}
+
+/* .LaptopImg img {
+    width: 100%;
+} */
+ .LaptopImg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media (max-width : 1200px) {
+    .formHeadingBox {
+        padding: 0px 20px;
+        margin-top: 5rem;
+    }
+
+    .formHeading {
+        text-align: unset;
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    .formSubheading {
+        text-align: unset;
+        font-size: 14px;
+    }
+    .formContainer
+    {
+        box-shadow: none;
+        padding: 0px 20px;
+    }
+
+    .formContainer label
+    {
+        font-size: 15px;
+    }
+
+    .FormInnerHeading
+    {
+        padding-top: unset;
+        font-size: 16px;
+        margin-bottom: 0.7rem;
+    }
+
+    .formContainer input::placeholder
+    {
+        font-size: 14px;
+    }
+
+    
+    .line1 {
+        flex-direction: column;
+        margin-bottom: unset;
+
+    }
+
+    .line1Input {
+        width: 100%;
+
+
+    }
+
+    .line2 {
+        flex-direction: column;
+        margin-bottom: unset;
+    }
+
+    .line2Input {
+        width: 100%;
+
+    }
+
+    .phoneNoInputBox
+    {
+
+        width: 100%;
+    }
+
+    .phoneNo {
+        width: 95%;
+    }
+
+
+    .line3 {
+        flex-direction: column;
+        margin-bottom: unset;
+    }
+
+    .line3Input {
+
+        width: 100%;
+
+    }
+
+
+
+    .messageTextAreaInput {
+        width: 100%;
+    }
+
+    .requirement
+    {
+        margin-bottom: unset;
+    }
+
+    .requirementInput {
+        width: 100%;
+    }
+
+    .line6Input {
+        width: 100%;
+    }
+
+    .inputContainer
+    {
+        margin-bottom: 0.6rem;
+    }
+
+
+
+}
+
+@media (max-width : 700px) {
+    .LaptopImgSection {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width : 700px) {
+    .LaptopImgSectionPhone {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width : 700px) {
+    .LaptopImgPhone {
+        width: 100%;
+        height: 12rem;
+        background: url("../../assets/form/allProducts.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+}
+
+@media (max-width : 400px) {
+    .LaptopImgPhone {
+        width: 100%;
+        height: 7.5rem;
+
+    }
+
+    
+}
+
+.centerWrapper {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* optional */
+    width: 100%;
+}
+
+
+
+.bandBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
+@media (max-width : 730px)
+{
+
+
+    .checkBoxNote
+    {
+        font-size: 14px;
+    }
+
+    .clientHeading
+    {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .clientInfo
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .quoteHeading
+    {
+        font-size: 16px;
+        padding: unset;
+    }
+
+    .FAQsection
+    {
+        padding: 0px 20px;
+    }
+
+    .FAQHeading
+    {
+        font-size: 18px;
+    }
+    .contactUsHeading
+    {
+        font-size: 20px;
+    }
+
+    .key{
+        font-size: 16px;
+    }
+
+    .value
+    {
+        font-size: 14px;
+    }
+
+    .contactUsBoxPhone
+    {
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        column-gap: 1rem;
+       
+    }
+
+    .contactSubBox1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+
+    }
+
+    .contactSubBox2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+
+    }
+
+    .contactDetailBox
+    {
+        height: 5rem;
+    }
+
+    
+}
+
+
+@media (max-width : 800px)
+{
+    
+.cardContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26rem;
+    overflow: hidden;
+    width: 370px;
+
+}
+
+.card {
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+    padding: 25px 15px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.feedBackImgBox {
+    width: 28%;
+    margin: 0px auto;
+}
+
+.cardBoxInnerHeading {
+    padding: unset;
+}
+
+.cardImage {
+    width: 100%;
+    border-radius: 8px;
+   
+}
+
+}
+
+@media (max-width :370px)
+{
+    .cardContainer {
+       
+        height: auto;
+       
+    
+    }
+}

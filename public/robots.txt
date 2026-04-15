@@ -1,0 +1,8 @@
+# Allow all user agents to access the website
+User-agent: *
+
+# Allow crawling all pages
+Allow: /
+
+# Link to the sitemap
+Sitemap: https://rise.eicetechnology.com/sitemap.xml

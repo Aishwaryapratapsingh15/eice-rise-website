@@ -1,0 +1,62 @@
+.container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem; /* Default gap */
+  }
+  
+  .image1 {
+    width: 7rem; /* 36 */
+  }
+  .image2 {
+    width: 7rem;
+  }
+  .image3 {
+    width: 10rem; /* 80 */
+  }
+  .image4 {
+    width: 5rem; /* 28 */
+  }
+
+
+  .certificateHeading
+{
+    
+    /* text-align: center;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-size: 40px; */
+    font-size: 32px;
+    text-align: center;
+}
+.certificate
+{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+}
+
+.certificateImgBox
+{
+    
+    margin: 0px auto;
+   
+}
+
+
+  
+  /* For md (768px and above) */
+  @media (min-width: 768px) {
+    .container {
+      column-gap: 3rem; /* 12 */
+    }
+  }
+  
+  /* For lg (1024px and above) */
+  @media (min-width: 1024px) {
+    .container {
+      column-gap: 5rem; /* 20 */
+    }
+  }
+  

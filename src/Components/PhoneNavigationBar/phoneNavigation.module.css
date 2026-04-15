@@ -1,0 +1,148 @@
+
+
+
+
+.navigationBar {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    height: 65px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+
+}
+
+
+
+
+.mainMenuContainer {
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.homeMenuContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sideBarProductPageContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.sideBarPricePageContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.menuBox
+{
+    font-size: 16px;
+    padding-bottom: 15rem;
+}
+
+.navigationContainer
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 10px 15px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+}
+
+
+.navNameAndIconBox
+{
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    font-size: 18px;
+
+}
+
+.plusMinusIcon
+{
+    padding-top: 7px;
+}
+
+.menuMainBox::-webkit-scrollbar {
+    display: none;
+}
+
+.navigatioName
+{
+    font-size: 22px;
+}
+
+
+
+.innerNavItems {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+}
+
+.innerNavItemStyle {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+
+
+}
+
+
+
+.requestonButton
+{
+    margin-top: 4rem;
+}
+
+
+.ContactUsBox
+{
+    margin-top: 5rem;
+
+}

@@ -1,0 +1,564 @@
+.pageMainHeading {
+    margin-top: 9rem;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.briefDescSection {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 3rem;
+
+}
+
+.imgAndDescBox {
+    display: flex;
+    /* width: 1300px; */
+    margin: 0px auto;
+    padding: 3rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descImg {
+    width: 40%;
+}
+
+.briefDescBox {
+
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+
+}
+
+.briefDescHeading {
+
+    font-size: 32px;
+}
+
+.briefPara {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.challengeSection {
+    padding: 0rem 4rem;
+    margin-bottom: 3rem;
+}
+
+.sectionHeading {
+    font-size: 32px;
+}
+
+.informationBox {
+    margin-top: 1rem;
+}
+
+.statement1 {
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+    font-size: 18px;
+}
+
+.informationBox {
+    margin-top: 1rem;
+}
+
+.statement2 {
+    padding-left: 2rem;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.statement2 li {
+    margin-bottom: 1rem;
+}
+
+.value {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.listBox {
+    line-height: 2rem;
+}
+
+.statement3 {
+    font-size: 18px;
+}
+
+.ourRoleSection {
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+
+}
+
+.roleDesc {
+    font-size: 18px;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+}
+
+.empoweringiListSection {
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.listBox {
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.toolsAndTechSection {
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.technology {
+    margin-top: 1rem;
+    display: flex;
+    column-gap: 1rem;
+
+}
+
+.technologyName {
+    background: #ccfff5;
+    font-weight: 600;
+    padding: 0.7rem 3rem;
+    border-radius: 16px;
+}
+
+.valuesToClientSection {
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+.listBox li {
+    margin-bottom: 1rem;
+}
+
+.listKey {
+
+    font-size: 18px;
+}
+
+.listValue {
+    font-size: 18px;
+}
+
+.highlightBoxHeading {
+    margin: 1rem 0rem;
+    font-size: 19px;
+    font-weight: 600;
+
+}
+
+.highlightsList {
+    /* padding-left: 1.5rem; */
+    padding-left: 2rem;
+}
+
+.highlightsBottomPara {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 3rem;
+
+}
+
+.highlightDesc {
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.section2 {
+    margin-bottom: 2rem;
+    /* background-color: #F0FBFF; */
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+
+
+}
+
+
+
+
+
+
+.moduleboxAndHeading {
+    padding: 40px 75px;
+}
+
+.moduleIncludedHeading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+
+.servicesBox {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+
+.iconAndTextBox {
+
+    width: 10rem;
+    padding: 8px;
+    background-color: white;
+    height: 9rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+
+
+}
+
+.iconAndTextBox:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+.imgBox {
+
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.imgBox img {
+    width: 50%;
+}
+
+
+.serviceName {
+    padding: 10px 28px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.serviceName2 {
+    padding: 10px 14px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.conclusionSection {
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+
+.conclusionPara {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+/* 
+@media (max-width : 800px) {
+
+    .pageMainHeading {
+        display: none;
+    }
+
+
+
+    .briefDescSection {
+
+        display: none;
+    }
+
+} */
+
+/* 
+@media (min-width : 800px) {
+
+    .pageMainHeadingPhone {
+        display: none;
+    }
+
+
+    .briefDescSectionPhone {
+        display: none;
+    }
+
+    .briefDescBoxPhone {
+        display: none;
+    }
+
+} */
+
+
+
+
+
+
+@media (max-width : 800px) {
+    .pageMainHeadingPhone {
+        margin-top: 6rem;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 600;
+        padding: 0px 20px;
+        margin-bottom: 1rem;
+
+
+    }
+
+
+    .briefDescSectionPhone {
+
+        background-color: rgb(245, 245, 245);
+        padding: 1rem 0px;
+
+
+    }
+
+
+
+    .descImgPhone {
+        width: 90%;
+        margin: 0px auto;
+
+    }
+
+    .briefDescBoxPhone {
+        padding: 0px 20px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .briefDescHeadingPhone {
+
+        margin-bottom: 0.5rem;
+        font-size: 18px;
+
+    }
+
+    .briefParaPhone {
+        line-height: 1.5rem;
+
+    }
+
+
+    .section2 {
+        padding-top: unset;
+    }
+
+    .moduleboxAndHeading {
+        padding: 0px 20px;
+       
+    }
+
+    .moduleIncludedHeading {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 1rem;
+
+    }
+
+    .servicesBox {
+        justify-content: unset;
+        padding: 0px 20px;
+    }
+
+
+    .iconAndTextBox {
+
+        width: 8rem;
+
+        height: 8rem;
+
+
+
+
+    }
+    .serviceName
+    {
+        padding: 10px 20px;
+    }
+
+
+    .value {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .helpBoxOfList {
+        margin-bottom: 1.5rem;
+    }
+
+
+
+
+
+    .challengeSection {
+        padding: 0px 20px;
+        margin-bottom: 3rem;
+
+    }
+
+    .sectionHeading {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    .statement1 {
+        font-size: 16px;
+    }
+
+    .statement2 {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .statement2 li {
+        margin-bottom: 0.5rem;
+    }
+
+
+
+
+
+    .listKey {
+        font-size: 16px;
+
+    }
+
+    .listValue {
+        font-size: 16px;
+    }
+
+    .statement3 {
+        font-size: 16px;
+    }
+
+    .moduleSection {
+        padding: 0px 20px;
+        margin-bottom: 3rem;
+    }
+
+    .iconAndName {
+        display: unset;
+
+    }
+
+    .moduleNames {
+        font-size: 16px;
+    }
+
+
+
+    .moduleImgBorder {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .iconWidth {
+        width: 6rem;
+
+
+    }
+
+    .listBox {
+        margin-top: unset;
+    }
+
+    .empoweringiListSection
+    {
+        padding: 0px 20px;
+    }
+
+
+    .ourRoleSection {
+        padding: 0 10px;
+        margin-bottom: 3rem;
+
+    }
+
+    .roleDesc {
+        font-size: 16px;
+        margin-top: unset;
+    }
+
+
+    .ourRoleBottomPoints {
+
+        font-size: 16px;
+    }
+
+    .valuesToClientSection {
+        padding: 0px 20px;
+        margin-bottom: 1rem;
+    }
+
+    .imgAndParaBox {
+        flex-direction: column;
+    }
+
+    .valueToClientPara {
+        width: 95%;
+        font-size: 16px;
+        line-height: 2rem;
+        margin-left: unset;
+
+
+    }
+
+
+    .valueClientImg {
+        width: 95%;
+    }
+
+
+    .conclusionSection
+    {
+        padding: 0px 20px;
+    }
+
+    .conclusionPara
+    {
+        margin-top: 0.5rem;
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+@media (max-width : 360px)
+{
+    .iconAndTextBox
+    {
+        width: 7rem;
+        height: auto;
+    }
+}

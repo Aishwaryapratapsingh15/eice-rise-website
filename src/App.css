@@ -1,0 +1,98 @@
+.globalPageSize {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    padding-top: 90px;
+
+}
+
+@media (max-width :1000px) {
+
+    .globalPageSize {
+        padding-top: 70px;
+        
+    }
+}
+
+.globalSectionSize {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+
+
+.insidePageUpperSection {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 130px;
+    max-width: 1920px;
+
+}
+
+@media (min-width : 2000px) {
+    .insidePageUpperSection {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 130px;
+        max-width: 1150px;
+    }
+}
+
+@media (max-width : 800px) {
+    .insidePageUpperSection {
+        /* width: 100%;
+        margin: 0 auto; */
+        padding-top: 90px;
+        /* max-width: 1150px; */
+    }
+
+.globalSectionSize {
+    padding: 0px 20px;
+}
+}
+
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+    margin-top: 15px;
+}
+
+.indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+
+.indicator.active { 
+    background-color: #012060;
+}
+
+
+.globalBlueOverviewSection {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    color: white;
+}
+
+
+@media (min-width : 2000px) {
+    .globalBlueOverviewSection {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+
+
+
+

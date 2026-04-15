@@ -1,0 +1,103 @@
+
+
+
+
+
+.breadScrum
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1rem;
+    column-gap: 0.3rem;
+}
+
+.arrowSign
+{
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+
+
+.productNavItemContainer
+{
+    display: flex;
+    column-gap: 0.8rem;
+    margin: 2rem 0;
+}
+
+.NavItemSubContainer
+{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+
+.productDetailBox
+{
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+   
+    border-bottom: 1px solid #DBDBDB;
+    /* padding-bottom: 8px; */
+    height: 3.2rem;
+
+    
+
+}
+
+.productIcon
+{
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.iconSize
+{
+    width: 100%;
+
+}
+
+.titleHeading
+{
+    font-size: 14px;
+   
+
+}
+
+.requestonButton
+{
+    margin-top: 4rem;
+}
+
+
+.ContactUsBox
+{
+    margin-top: 5rem;
+
+}
+
+
+@media (max-width : 330px)
+{
+    .productDetailBox {
+        height: 4rem;
+        
+    }
+
+    .NavItemSubContainer
+    {
+       row-gap: 0.5rem;
+       
+    
+    }
+}

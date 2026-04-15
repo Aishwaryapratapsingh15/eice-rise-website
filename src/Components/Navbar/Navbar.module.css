@@ -1,0 +1,124 @@
+.navigationContainer {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    background-color: white;
+    top: 0;
+    padding: 0px 15px;
+
+}
+
+
+.navigationItemBox {
+    width: 100%;
+    /* max-width: 71.8rem; */
+     max-width: 77rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+    
+
+}
+
+.eiceRiseLogoBox
+{
+    width: 9rem;
+
+}
+
+.eiceRiseLogo
+{
+    width: 100%;
+}
+
+.navigationIcon {
+
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+    padding: 0px 5px;
+    /* margin-left: 7.3rem; */
+}
+
+.navNameAndArrow {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2rem;
+    border-bottom: 2px solid white;
+
+}
+
+.navName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.homeNav {
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+.homeNav:hover {
+    color: rgba(1, 176, 241, 1);
+    border-color: rgba(1, 176, 241, 1);
+
+}
+
+.navNameAndArrow:hover {
+    color: rgba(1, 176, 241, 1);
+    border-color: rgba(1, 176, 241, 1);
+}
+
+.navNameAndArrow:hover .navName {
+    color: rgba(1, 176, 241, 1);
+}
+
+.contactUsBtn {
+
+    background: rgba(1, 176, 241, 1);
+
+    padding: 5px 0.3rem;
+    border-radius: 5px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 1.8rem;
+    width: 9rem;
+    text-align: center;
+}
+
+
+
+
+.contactUsBtn:hover
+{
+    background-color: #5FCDF6;
+
+}
+
+.dropDownContainerProduct {
+    position: absolute;
+    top: 3rem;
+    left: -12rem;
+}
+
+.dropDownContainerPricing {
+    position: absolute;
+    top: 3rem;
+    left: -17rem;
+}
+
+
+
+
+
+.navigationButton {
+    display: flex;
+    position: relative;
+    column-gap: 8px;
+}

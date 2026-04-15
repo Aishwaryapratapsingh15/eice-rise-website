@@ -1,0 +1,37 @@
+.accordionItem {
+    border-bottom: 1px solid #ddd;
+
+    overflow: hidden;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    column-gap: 5px;
+}
+
+.answer {
+    font-size: 16px;
+    color: #555;
+    padding-right: 0.5rem;
+    padding-bottom: 18px;
+    
+}
+
+.icon {
+    font-size: 26px;
+}
+
+
+
+@media (max-width :800px)
+{
+    .question {
+        font-size: 16px;
+    }
+}

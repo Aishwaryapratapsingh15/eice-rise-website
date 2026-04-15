@@ -1,0 +1,28 @@
+
+.requestDemoBtnSideBar
+{
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.demoButtonSideBar
+{
+    background-color: rgba(1, 176, 241, 1);
+    display: flex;
+    gap: 10px;
+    padding: 0.6rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px; */
+}
+
+.demoButtonSideBar:hover
+{
+    background-color: #5FCDF6;
+}

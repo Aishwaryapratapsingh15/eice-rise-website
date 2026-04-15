@@ -1,0 +1,88 @@
+
+
+
+.breadScrum
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1rem;
+    column-gap: 0.3rem;
+}
+
+.arrowSign
+{
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+
+
+.priceNavItemContainer {
+    /* display: flex;
+    column-gap: 4rem; */
+    margin: 2rem 0;
+}
+
+
+.priceNavItemSubContainer {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1rem; */
+
+}
+
+
+
+.priceDetailBox {
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+    /* border-bottom: 1px solid; */
+    border-bottom: 1px solid #C5C5C5;
+    /* padding-bottom: 8px; */
+    height: 3.2rem;
+    padding: 0px 15px;
+
+
+}
+
+.priceIcon {
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.iconSize {
+    width: 100%;
+
+}
+
+.titleHeading {
+    font-size: 14px;
+
+}
+
+
+.requestonButton
+{
+   margin-bottom: 4rem;
+}
+
+
+.ContactUsBox
+{
+    margin-top: 5rem;
+
+}
+
+
+@media (max-width : 330px)
+{
+    .priceDetailBox {
+        height: 4rem;
+    }
+}
