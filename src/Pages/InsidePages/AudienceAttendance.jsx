@@ -8,6 +8,20 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
+import bcmIcon from "../../assets/audience/BCM.jpg"
+import bemeIcon from "../../assets/audience/BEME.png"
+import boeIcon from "../../assets/audience/BOE.jpg"
+import briIcon from "../../assets/audience/BRI.jpg"
+import bscIcon from "../../assets/audience/BSC.jpg"
+import camIcon from "../../assets/audience/CAM.png"
+import daIcon from "../../assets/audience/DA.png"
+import eamIcon from "../../assets/audience/EAM.png"
+import gvrIcon from "../../assets/audience/GVR.png"
+import matIcon from "../../assets/audience/MAT.png"
+import rtotIcon from "../../assets/audience/RTOT.png"
+import vwurIcon from "../../assets/audience/VWUR.png"
+
+
 
 const params = new URLSearchParams(window.location.search);
 const isEmbed = params.get("embed") === "true";
@@ -29,56 +43,56 @@ export default function AudienceAttendance() {
       heading: "Real-Time",
       heading2: "Occupancy Tracking",
       desc: "Monitor live attendance across all venues — gym, pool, restaurant, banquet hall, sports facilities — with real-time headcounts and capacity indicators.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: rtotIcon,
+      width: "44px"
     },
     {
       key: 2,
       heading: "Guest & Visitor",
       heading2: "Registration",
       desc: "Register non-member guests and visitors with host details, purpose of visit, and time-stamped entry/exit logs for security and compliance.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: gvrIcon,
+      width: "44px"
     },
     {
       key: 3,
       heading: "Capacity Alerts",
       heading2: "& Management",
       desc: "Set maximum capacity limits per venue and receive alerts when occupancy approaches or reaches limits, ensuring safety compliance and comfort.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: camIcon,
+      width: "44px"
     },
     {
       key: 4,
       heading: "Venue-Wise",
       heading2: "Utilization Reports",
       desc: "Generate detailed reports on venue usage patterns — peak hours, popular days, average duration of stay — for infrastructure planning and scheduling.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: vwurIcon,
+      width: "44px"
     },
     {
       key: 5,
       heading: "Member Activity",
       heading2: "Tracking",
       desc: "Track individual member venue visits, frequency, and activity preferences to understand usage patterns and drive personalized engagement.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: matIcon,
+      width: "44px"
     },
     {
       key: 6,
       heading: "Event Attendance",
       heading2: "Management",
       desc: "Record and manage attendance for events, workshops, and programs with pre-registration, walk-in tracking, and post-event attendance reports.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: eamIcon,
+      width: "44px"
     },
     {
       key: 7,
       heading: "Dashboard &",
       heading2: "Analytics",
       desc: "Visualize attendance trends, peak-hour heatmaps, and venue comparison metrics through an interactive dashboard for strategic facility management.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: daIcon,
+      width: "44px"
     }
   ];
 
@@ -88,31 +102,31 @@ export default function AudienceAttendance() {
       key: 1,
       heading: "Enhanced Member Experience",
       desc: "Fast, frictionless check-in methods and capacity management ensure a comfortable, well-managed venue experience.",
-      img: "/placeholders/benefit.jpg"
+      img: bemeIcon
     },
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automated attendance capture eliminates manual tracking, freeing staff to focus on member service and facility management.",
-      img: "/placeholders/benefit.jpg"
+      img: boeIcon
     },
     {
       key: 3,
       heading: "Revenue Insights",
       desc: "Utilization data helps identify underused venues for revenue programs and justifies investment in high-demand facilities.",
-      img: "/placeholders/benefit.jpg"
+      img: briIcon
     },
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A single dashboard provides real-time visibility into all venue occupancy and member activity across the entire property.",
-      img: "/placeholders/benefit.jpg"
+      img: bcmIcon
     },
     {
       key: 5,
       heading: "Safety & Compliance",
       desc: "Capacity alerts and visitor logs ensure regulatory compliance and enable swift head counts during emergency situations.",
-      img: "/placeholders/benefit.jpg"
+      img: bscIcon
     }
   ];
 

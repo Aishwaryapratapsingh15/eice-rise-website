@@ -14,6 +14,12 @@ import ghpmIcon from "../../assets/feedback/GHPM.png"
 import retIcon from "../../assets/feedback/RET.png"
 import rtfaIcon from "../../assets/feedback/RTFA.png"
 import sadIcon from "../../assets/feedback/SAD.png"
+import bcmIcon from "../../assets/feedback/BCM.jpg"
+import beglIcon from "../../assets/feedback/BEGL.jpg"
+import boiIcon from "../../assets/feedback/BOI.jpg"
+import briIcon from "../../assets/feedback/BRI.jpg"
+import bsrIcon from "../../assets/feedback/BSR.JPG"
+
 
 const params = new URLSearchParams(window.location.search);
 const isEmbed = params.get("embed") === "true";
@@ -86,31 +92,31 @@ export default function Feedback() {
       key: 1,
       heading: "Enhanced Guest Loyalty",
       desc: "Prompt acknowledgement and resolution of feedback demonstrates care, converting potentially dissatisfied guests into loyal advocates.",
-      img: "/placeholders/benefit.jpg"
+      img: beglIcon
     },
     {
       key: 2,
       heading: "Operational Improvement",
       desc: "Data-driven insights from feedback trends help identify systemic issues and prioritize operational improvements.",
-      img: "/placeholders/benefit.jpg"
+      img: boiIcon
     },
     {
       key: 3,
       heading: "Revenue Impact",
       desc: "Improved satisfaction scores directly correlate with higher repeat visits, positive reviews, and increased referral revenue.",
-      img: "/placeholders/benefit.jpg"
+      img: briIcon
     },
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A single dashboard for all feedback across properties, channels, and departments provides complete visibility into guest sentiment.",
-      img: "/placeholders/benefit.jpg"
+      img: bcmIcon
     },
     {
       key: 5,
       heading: "Service Recovery",
       desc: "Real-time alerts enable immediate intervention for negative experiences, turning potential complaints into service recovery success stories.",
-      img: "/placeholders/benefit.jpg"
+      img: bsrIcon
     }
   ];
 

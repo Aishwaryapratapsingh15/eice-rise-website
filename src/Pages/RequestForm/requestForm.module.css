@@ -245,7 +245,7 @@ input[type="checkbox"] {
     font-size: 17px;
     border: none;
     color: white;
-    background: rgba(1, 176, 241, 1);
+    background: #012060;
     padding: 1rem 6rem;
     border-radius: 5px;
     position: absolute;

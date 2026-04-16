@@ -12,6 +12,11 @@ import mdsIcon from "../../assets/wifi/MDS.png";
 import ipmsIcon from "../../assets/wifi/IPMS.png";
 import draIcon from "../../assets/wifi/DRA.png";
 import bartIcon from "../../assets/wifi/BART.png";
+import bcmIcon from "../../assets/wifi/BCM.png";
+import begeIcon from "../../assets/wifi/BEGE.png";
+import bnsIcon from "../../assets/wifi/BNS.png";
+import boeIcon from "../../assets/wifi/BOE.png";
+import broIcon from "../../assets/wifi/BRO.png";
 
 
 const Placeholder = ({ label }) => (
@@ -88,11 +93,35 @@ export default function WifiModule() {
   ];
 
   const benefits = [
-    "Enhanced Guest Experience",
-    "Operational Efficiency",
-    "Revenue Optimization",
-    "Centralized Management",
-    "Network Security",
+    {
+      icon:begeIcon,
+    title:"Enhanced Guest Experience",
+    desc:"Delivers instant, frictionless internet access that meets modern guest expectations from the first minute of arrival.",
+    },
+
+    {
+    icon:boeIcon,
+    title:"Operational Efficiency",
+    desc:"Eliminates manual Wi-Fi credential distribution, freeing front-desk staff to focus on personalized guest service.",
+    },
+
+    {
+    icon:broIcon,
+    title:"Revenue Optimization",
+    desc:"Enables tiered or premium Wi-Fi packages as upsell opportunities, turning connectivity into an additional revenue stream.",
+    },
+
+    {
+    icon:bcmIcon,
+    title:"Centralized Management",
+    desc:"Provides a single dashboard to monitor, manage, and troubleshoot all guest Wi-Fi access across the entire property.",
+    },
+
+    {
+    icon:bnsIcon,
+    title:"Network Security",
+    desc:"Ensures automatic expiry, device limits, and isolated guest networks to protect property infrastructure and guest data.",
+    }
   ];
 
   const query = [
@@ -265,12 +294,14 @@ export default function WifiModule() {
           {benefits.map((b, i) => (
             <div key={i} className={i % 2 === 0 ? 'GlobalBenefitBox1' : 'GlobalBenefitBox2'}>
               <div className="GlobalBenefitImgBox">
-                <Placeholder label="Image" />
+                <div style={{ display: "flex", gap: "10px" }}>
+                <img src={b.icon} width="350px" />
+                </div>
               </div>
               <div className="GlobalBenefitTextBox">
-                <div className={style.innerHeadingBenifit}>{b}</div>
+                <div className={style.innerHeadingBenifit}>{b.title}</div>
                 <div className={style.innerDescBenifit}>
-                  This benefit enhances efficiency and experience.
+                  {b.desc}
                 </div>
               </div>
             </div>

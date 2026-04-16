@@ -8,6 +8,18 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
+import dwabIcon from "../../assets/compliance/DWAB.png";
+import pdaIcon from "../../assets/compliance/PDA.png";
+import pprIcon from "../../assets/compliance/PPR.png";
+import rtaIcon from "../../assets/compliance/RTA.png";
+import rtptIcon from  "../../assets/compliance/RTPT.png";
+import serIcon from "../../assets/compliance/SER.png";
+import tadIcon from  "../../assets/compliance/TAD.png";
+import bcvIcon from  "../../assets/compliance/BCV.png";
+import bdddIcon from  "../../assets/compliance/BDDD.jpg";
+import beaIcon from  "../../assets/compliance/BEA.jpg";
+import boeIcon from  "../../assets/compliance/BOE.jpg";
+import bsqIcon from  "../../assets/compliance/BSQ.jpg";
 
 const params = new URLSearchParams(window.location.search);
 const isEmbed = params.get("embed") === "true";
@@ -29,23 +41,23 @@ export default function ComplianceRegister() {
       heading: "Task Assignment",
       heading2: "& Delegation",
       desc: "Assign tasks with priority levels, deadlines, attachments, and detailed instructions from a centralized task management dashboard.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: tadIcon,
+      width: "44px"
     },
     {
       key: 2,
       heading: "Real-Time",
       heading2: "Progress Tracking",
       desc: "Monitor task status — pending, in-progress, completed, overdue — in real time with progress percentages and timeline views.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: rtptIcon,
+      width: "44px"
     },
     {
       key: 3,
       heading: "Department-Wise",
       heading2: "Activity Boards",
       desc: "Organize activities by department — housekeeping, maintenance, F&B, front office — with customizable boards, filters, and views.",
-      img: "/placeholders/icon.png",
+      img: dwabIcon,
       width: "60px"
     },
     {
@@ -53,7 +65,7 @@ export default function ComplianceRegister() {
       heading: "Recurring Task",
       heading2: "Automation",
       desc: "Set up recurring tasks for monthly operations like room inspections, equipment servicing, and compliance checks with auto-assignment.",
-      img: "/placeholders/icon.png",
+      img: rtaIcon,
       width: "60px"
     },
     {
@@ -61,23 +73,23 @@ export default function ComplianceRegister() {
       heading: "SLA &",
       heading2: "Escalation Rules",
       desc: "Define Service Level Agreements for task categories with automated escalation to supervisors and managers when deadlines are breached.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: serIcon,
+      width: "44px"
     },
     {
       key: 6,
       heading: "Photo & Document",
       heading2: "Attachments",
       desc: "Allow staff to attach before/after photos, inspection reports, and documents to tasks as proof of completion for audit trails.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: pdaIcon,
+      width: "4opx"
     },
     {
       key: 7,
       heading: "Performance",
       heading2: "Reports",
       desc: "Generate individual and team performance reports — completion rates, average resolution time, SLA compliance — for workforce optimization.",
-      img: "/placeholders/icon.png",
+      img: pprIcon,
       width: "60px"
     }
   ];
@@ -88,31 +100,31 @@ export default function ComplianceRegister() {
       key: 1,
       heading: "Enhanced Accountability",
       desc: "Clear task ownership, deadlines, and audit trails ensure every activity has a responsible person and a documented outcome.",
-      img: "/placeholders/benefit.jpg"
+      img: beaIcon
     },
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automated recurring tasks and reduce supervisor follow-up effort and keep operations running smoothly.",
-      img: "/placeholders/benefit.jpg"
+      img: boeIcon
     },
     {
       key: 3,
       heading: "Service Quality",
       desc: "SLA-driven task management ensures guest-impacting activities are prioritized and completed within acceptable timeframes.",
-      img: "/placeholders/benefit.jpg"
+      img: bsqIcon
     },
     {
       key: 4,
       heading: "Centralized Visibility",
       desc: "Management gets a bird’s-eye view of all operational activities across departments and properties from a single dashboard.",
-      img: "/placeholders/benefit.jpg"
+      img: bcvIcon
     },
     {
       key: 5,
       heading: "Data-Driven Decisions",
       desc: "Performance analytics help identify bottlenecks, reward top performers, and allocate resources more effectively.",
-      img: "/placeholders/benefit.jpg"
+      img: bdddIcon
     }
   ];
 

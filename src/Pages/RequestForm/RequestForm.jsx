@@ -946,7 +946,8 @@ const handleSubmit = async (e) => {
 
             <section className={`${styles.centerWrapper}`} style={{
     background: `url(${band}) no-repeat center`,
-    backgroundSize: "cover",
+    backgroundSize: "100% 50%",
+    backgroundPosition: "center calc(50% + 25px)",
   }}>
 
                 <div className={`${styles.LaptopImg}`}>

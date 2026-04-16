@@ -1,5 +1,8 @@
 import style from "./Styles/roomBooking.module.css";
 import { useState, useEffect } from "react";
+import Certificate from "../../Components/Certificate/Certificate.jsx";
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
+import FooterLower from "../../Components/Footer/FooterLower.jsx";
 import Accordion from "../../Components/Accordian/Accordian.jsx";
 import malIcon from "../../assets/singleSignOn/MAL.png";
 import mpcIcon from "../../assets/singleSignOn/MPC.png";
@@ -7,6 +10,16 @@ import nacIcon from "../../assets/singleSignOn/NAC.png";
 import rbacIcon from "../../assets/singleSignOn/RBAC.png";
 import salIcon from "../../assets/singleSignOn/SAL.png";
 import umpIcon from "../../assets/singleSignOn/UMP.png";
+import bcgIcon from "../../assets/singleSignOn/BCG.jpg";
+import bcscIcon from "../../assets/singleSignOn/BCSC.jpg";
+import besIcon from "../../assets/singleSignOn/BES.png";
+import boeIcon from "../../assets/singleSignOn/BOE.png";
+import bsIcon from "../../assets/singleSignOn/BS.png";
+import laptop from "../../assets/section3Laptop/room.webp"
+
+const params = new URLSearchParams(window.location.search);
+const isEmbed = params.get("embed") === "true";
+
 
 
 const Placeholder = ({ label }) => (
@@ -69,22 +82,27 @@ export default function SingleSignOn() {
 
  const benefits = [
   {
+    icon: bcscIcon,
     title: "Complete System Control",
     desc: "Provides a single command center for all administrative functions, eliminating the need to manage settings across individual modules."
   },
   {
+    icon: besIcon,
     title: "Enhanced Security",
     desc: "Granular RBAC and comprehensive audit logs ensure that every access and action is authorized, tracked, and accountable."
   },
   {
+    icon: boeIcon,
     title: "Operational Efficiency",
     desc: "Centralized user and configuration management reduces IT overhead and speeds up onboarding of new users and properties."
   },
   {
+    icon: bsIcon,
     title: "Scalability",
     desc: "Multi-property support with modular activation makes it easy to scale operations as the organization grows."
   },
   {
+    icon: bcgIcon,
     title: "Compliance & Governance",
     desc: "Audit trails, access controls, and backup configurations ensure regulatory compliance and organizational governance standards."
   }
@@ -108,6 +126,14 @@ export default function SingleSignOn() {
       answer: "A : Absolutely. SINGLE SIGN-ON serves as the backbone for user access and configuration across every EICE Rise module — any permission, master data, or notification setting configured here applies system-wide."
     }
   ];
+
+const footerUpperText = {
+
+        text1: 'Every',
+        text2: " Single ",
+        text3: 'Visit Counted ',
+        img: laptop
+    }
 
   return (
     <>
@@ -251,9 +277,9 @@ export default function SingleSignOn() {
     {/* IMAGE SIDE */}
     <div className="GlobalBenefitImgBox">
       <div style={{ display: "flex", gap: "10px" }}>
-        <img src="/placeholders/benefit.jpg" width="80" />
-        <img src="/placeholders/benefit.jpg" width="80" />
-        <img src="/placeholders/benefit.jpg" width="80" />
+        <img src={b.icon} width="350px" />
+        {/* <img src="/placeholders/benefit.jpg" width="80" />
+        <img src="/placeholders/benefit.jpg" width="80" /> */}
       </div>
     </div>
 
@@ -282,6 +308,11 @@ export default function SingleSignOn() {
 
         </div>
       </section>
+
+      {/* ================= FOOTER ================= */}
+            <Certificate />
+            <FooterUpperPart text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={laptop} />
+            {!isEmbed && <FooterLower />}
 
     </>
   );

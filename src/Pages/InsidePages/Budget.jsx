@@ -1,5 +1,8 @@
-import { useState } from "react";
-import styles from "./Styles/pos.module.css";
+import { useState, useEffect } from "react";
+import style from "./Styles/roomBooking.module.css";
+import Certificate from "../../Components/Certificate/Certificate.jsx";
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
+import FooterLower from "../../Components/Footer/FooterLower.jsx";
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 import abpIcon from "../../assets/budget/ABP.png"
 import brrIcon from "../../assets/budget/BRR.png"
@@ -10,14 +13,39 @@ import hcIcon from "../../assets/budget/HC.png"
 import mpcIcon from "../../assets/budget/MPC.png"
 import varIcon from "../../assets/budget/VAR.png"
 import mqtIcon from "../../assets/budget/MQT.png"
+import barIcon from "../../assets/budget/BAR.jpg"
+import bcoIcon from "../../assets/budget/BCO.jpg"
+import bfdIcon from "../../assets/budget/BFD.png"
+import boeIcon from "../../assets/budget/BOE.jpg"
+import bspIcon from "../../assets/budget/BSP.jpg"
+
+const params = new URLSearchParams(window.location.search);
+const isEmbed = params.get("embed") === "true";
 
 export default function Budget() {
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+  const Placeholder = ({ label }) => (
+  <div
+    style={{
+      border: "1px dashed #CBD5E1",
+      background: "#F1F5F9",
+      height: "150px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    {label}
+  </div>
+);
 
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 980);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const features = [
     {
@@ -69,22 +97,27 @@ export default function Budget() {
 
   const benefits = [
     {
+      icon: bfdIcon,
       title: "Financial Discipline",
       desc: "Threshold-based alerts and approval workflows enforce spending discipline across all departments and properties."
     },
     {
+      icon: boeIcon,
       title: "Operational Efficiency",
       desc: "Automated variance calculations and report generation save finance teams hours of manual reconciliation work."
     },
     {
+      icon: bspIcon,
       title: "Strategic Planning",
       desc: "Historical comparisons and trend analytics enable more accurate forecasting and informed financial decisions."
     },
     {
+      icon: bcoIcon,
       title: "Centralized Oversight",
       desc: "Multi-property budget consolidation gives leadership a complete financial picture across the entire organization."
     },
     {
+      icon: barIcon,
       title: "Audit Readiness",
       desc: "Version-controlled revisions, approval trails, and automated feeds ensure transparent, audit-ready budget documentation."
     }
@@ -109,131 +142,165 @@ export default function Budget() {
     }
   ];
 
-  return (
-    <div>
 
-      {/* ================= HERO ================= */}
-      <section className={styles.heroSectionConatiner}>
-        <div className={styles.fadeBackgroundConatiner}>
-          <div className={styles.contentConatiner}>
-
-            {/* LEFT TEXT */}
-            <div className={styles.headingBox}>
-              <h1 className={styles.mainHeading}>BUDGET</h1>
-              <p className={styles.mainPara}>
+  
+  const footerUpperText = {
+    text1: "Every visit counted,",
+    text2: "",
+    text3: "every venue optimized",
+    img: "/placeholders/laptop.jpg"
+  };
+ return (
+    <>
+      {/* HERO */}
+      {isPhone ? (
+        <section className={style.heroSectionConatinerPhone}>
+          <div className={style.contentConatinerPhone}>
+            <div className={style.headingBoxPhone}>
+              <div className={style.mainHeadingPhone}>BUDGET</div>
+              <div className={style.mainParaPhone}>
                 Plan, allocate, and monitor budgets across departments and properties with real-time variance tracking and intelligent forecasting tools.
-              </p>
-            </div>
-
-            {/* RIGHT IMAGE GRID */}
-            <div style={{ display: "flex", gap: "10px", width: "50%" }}>
-              <img src="/placeholder1.jpg" style={{ width: "50%", borderRadius: "10px" }} />
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", width: "50%" }}>
-                <img src="/placeholder2.jpg" style={{ width: "100%", borderRadius: "10px" }} />
-                <img src="/placeholder3.jpg" style={{ width: "100%", borderRadius: "10px" }} />
               </div>
             </div>
 
+            <div className={style.herosectionImgBoxPhone}>
+              <Placeholder label="Hero Image" />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* ================= TAGWORDS ================= */}
-      <section className={styles.section2}>
-        {["Planned", "Precise", "Predictive"].map((item, i) => (
-          <div key={i} className={styles.section2IconAndName}>
-            <img src="/icon.png" className={styles.section2Icon} />
-            <p className={styles.iconName}>{item}</p>
-          </div>
-        ))}
-      </section>
-
-      {/* ================= SECTION 3 ================= */}
-      <section className={styles.section3}>
-        <div className={styles.blueBoxSetion3}>
-          <div className={styles.laptopImgSection3}>
-            <img src="/laptop.png" className={styles.laptopImgBox} />
-          </div>
-          <p className={styles.section3Para}>
-            Powerful budget dashboards for real-time financial insights
-          </p>
-        </div>
-      </section>
-
-      {/* ================= INTRO ================= */}
-      <section className={styles.section4}>
-        <p className={styles.paragraph}>
-          Our Budget module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to streamline financial planning and budget control for Hotels, Resorts, Clubs and Institutions. From annual budget preparation to monthly variance analysis, this feature provides a powerful, user-friendly interface for finance teams, department heads, and management, ensuring fiscal discipline and data-driven financial decisions.
-        </p>
-      </section>
-
-      {/* ================= FEATURES ================= */}
-      <section className={styles.section4}>
-        <h2 className={styles.keyFeatureHeading}>Key Features</h2>
-        <div className={styles.featureContainer}>
-          {features.map((f, i) => (
-            <div key={i} className={styles.featureInnerBox}>
-              <div className={styles.headingAndIconFeatures}>
-                <img src={f.icon} width="40" />
-                <p className={styles.featureHeading}>{f.title}</p>
+        </section>
+      ) : (
+        <section className={style.heroSectionConatiner}>
+          <div className={style.fadeBackgroundConatiner}>
+            <div className={style.contentConatiner}>
+              <div className={style.headingBox}>
+                <div className={style.mainHeading}>BUDGET</div>
+                <div className={style.mainPara}>
+                  Plan, allocate, and monitor budgets across departments and properties with real-time variance tracking and intelligent forecasting tools.
+                </div>
               </div>
-              <p className={styles.featureDesc}>{f.desc}</p>
+
+              <div className={style.herosectionImgBox}>
+                <Placeholder label="Hero Image" />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* TAGWORDS */}
+      <section style={{ backgroundColor: "#f5f5f5" }}>
+        <div className={`${style.section2} globalSectionSize`}>
+          {["Planned", "Precise", "Predictive"].map((t, i) => (
+            <div key={i} className={style.section2IconAndName}>
+              <div className={style.section2Icon}>
+                <Placeholder label="Icon" />
+              </div>
+              <div className={style.iconName}>{t}</div>
             </div>
           ))}
         </div>
+      </section>
 
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <button className={styles.demoButton}>
-            Request a Demo →
-          </button>
+      {/* MOCKUP */}
+      <section>
+        <div className={style.section3}>
+          <div className={style.blueBoxSetion3}>
+            <div className={style.laptopImgSection3}>
+              <Placeholder label="Laptop Mockup" />
+            </div>
+
+            <div className={style.section3Para}>
+              <div className={style.paragraph}>
+                Our Budget module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to streamline financial planning and budget control for Hotels, Resorts, Clubs and Institutions. From annual budget preparation to monthly variance analysis, this feature provides a powerful, user-friendly interface for finance teams, department heads, and management, ensuring fiscal discipline and data-driven financial decisions.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ================= BENEFITS ================= */}
-      <section className={styles.section5}>
-        <h2 className={styles.benefitSectionHeading}>Benefits</h2>
-
-        {benefits.map((b, i) => (
-          <div key={i} style={{
-            display: "flex",
-            flexDirection: i % 2 === 0 ? "row" : "row-reverse",
-            alignItems: "center",
-            marginBottom: "50px",
-            gap: "40px"
-          }}>
-
-            {/* IMAGE */}
-            <div style={{ display: "flex", gap: "10px" }}>
-              <img src="/p1.jpg" width="80" />
-              <img src="/p2.jpg" width="80" />
-              <img src="/p3.jpg" width="80" />
-            </div>
-
-            {/* TEXT */}
-            <div>
-              <h3 className={styles.innerHeadingBenifit}>{b.title}</h3>
-              <p className={styles.innerDescBenifit}>{b.desc}</p>
-            </div>
-
+      {/* INTRO */}
+      {/* <section>
+        <div className={`${style.section4} globalSectionSize`}>
+          <div className={style.paragraph}>
+            
           </div>
-        ))}
+        </div>
+      </section>  */}
+
+      {/* FEATURES */}
+      <section>
+        <div className={`${style.section4} globalSectionSize`}>
+          <div className={style.keyFeatureHeading}>Key Features</div>
+
+          <div className={style.featureContainer}>
+            {features.map((f, i) => (
+              <div key={i} className={style.featureInnerBox}>
+                <div className={style.headingAndIconFeatures}>
+                  <div style={{ width: "44px" }}>
+                    <img src={f.icon} style={{ width: "100%" }} />
+                  </div>
+                  <div className={style.featureHeading}>{f.title}</div>
+                </div>
+
+                <div className={style.featureDesc}>{f.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* ================= FAQ ================= */}
-            <section >
-                <div className={`${styles.FAQsection} globalSectionSize font4`}>
-                    <div className={`${styles.FAQHeading}`}>Frequently Asked Questions</div>
+      {/* CTA */}
+      <section className={style.requestDemoBtn}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className={style.demoButton}>Request a Demo →</div>
+        </div>
+      </section>
 
+      {/* BENEFITS */}
+      <section style={{ background: "#f5f5f5" }}>
+        <div className={`${style.section5} globalSectionSize`}>
+          <div className={style.benefitSectionHeading}>Benefits</div>
 
-                    <div className={styles.FAQContainer}>
-                        {faqs.map((item) => (
-                            <Accordion key={item.q} question={item.q} answer={item.a} />
-                        ))}
-                    </div>
-
+          {benefits.map((b, i) => (
+            <div
+              key={i}
+              className={i % 2 === 0 ? "GlobalBenefitBox1" : "GlobalBenefitBox2"}
+            >
+              <div className="GlobalBenefitImgBox">
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <img src={b.icon} width="350px" />
+                  {/* <img src="/p2.jpg" width="80" />
+                  <img src="/p3.jpg" width="80" /> */}
                 </div>
-            </section>
+              </div>
 
-    </div>
+              <div className="GlobalBenefitTextBox">
+                <div className={style.innerHeadingBenifit}>{b.title}</div>
+                <div className={style.innerDescBenifit}>{b.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section>
+        <div className={`${style.FAQsection} globalSectionSize`}>
+          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+
+          <div className={style.FAQContainer}>
+            {faqs.map((item, i) => (
+              <Accordion key={i} question={item.q} answer={item.a} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+        {/* ================= FOOTER ================= */}
+                  <Certificate />
+                  <FooterUpperPart {...footerUpperText} />
+                  {!isEmbed && <FooterLower />}
+      
+    </>
   );
 }

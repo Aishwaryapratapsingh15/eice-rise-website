@@ -105,6 +105,52 @@ export default function ProductDrop() {
             icon: food,
             path: "food-cost",
         },
+        {
+            key: 11,
+            title: "Single-Sign-On",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "Single-Sign-On",
+        },
+        {
+            key: 12,
+            title: "Wi-Fi Module",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "wifi",
+        },
+
+    ]
+
+      const product4 = [
+        {
+            key: 13,
+            title: "Budget and Planning",
+             description: "Manage inventory effortlessly",
+            icon: inventary,
+             path: "Budget",
+        },
+        {
+            key: 14,
+            title: "Feedback System",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "Feedback",
+        },
+        {
+            key: 15,
+            title: "Audience Attendance",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "audience-attendance",
+        },
+        {
+            key: 16,
+            title: "Compliance Register",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "compliance-register",
+        },
 
     ]
 
@@ -155,6 +201,27 @@ export default function ProductDrop() {
                 <div className={`${styles.productConatiner} `}>
 
                     {product3.map((item) =>
+                    (
+                        <Link className="linkClass"  key={item.key} to={item.path}>
+                            <div  className={`${styles.productDetailBox}`}>
+                                <div className={`${styles.productIcon}`} >
+                                    <img className={`${styles.iconSize}`} src={item.icon} alt={item.title} />
+                                </div>
+                                <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                                <div className={`${styles.titeDesc} font1`} >{item.description} </div>
+                            </div>
+                        </Link>
+
+                    ))}
+
+                </div>
+
+
+{/* <---------------------------------------------------Product4------------------------------ */}
+               
+                     <div className={`${styles.productConatiner} `}>
+
+                    {product4.map((item) =>
                     (
                         <Link className="linkClass"  key={item.key} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>

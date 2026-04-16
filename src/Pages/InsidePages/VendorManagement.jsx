@@ -8,6 +8,18 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
+import bpvmIcon from "../../assets/vendor/BPVM.png";
+import camIcon from "../../assets/vendor/CAM.png";
+import cdtIcon from "../../assets/vendor/CDT.png";
+import phlIcon from "../../assets/vendor/PHL.png";
+import psrIcon from "../../assets/vendor/PSR.png";
+import vcpIcon from "../../assets/vendor/VCP.png";
+import vctIcon from "../../assets/vendor/VCT.png";
+import vmdIcon from "../../assets/vendor/VMD.png";
+import vroIcon from "../../assets/vendor/VRO.png";
+
+
+
 
 const params = new URLSearchParams(window.location.search);
 const isEmbed = params.get("embed") === "true";
@@ -29,72 +41,72 @@ export default function VendorManagement() {
       heading: "Vendor Registration",
       heading2: "& Onboarding",
       desc: "Digitize vendor onboarding with online registration forms, document collection (GST, PAN, bank details), and verification workflows for compliance-ready vendor profiles.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: vroIcon,
+      width: "44px"
     },
     {
       key: 2,
       heading: "Vendor Master",
       heading2: "Database",
       desc: "Maintain a centralized vendor directory with contact details, service categories, payment terms, credit limits, and compliance documentation for quick reference.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: vmdIcon,
+      width: "44px"
     },
     {
       key: 3,
       heading: "Performance",
       heading2: "Scoring & Rating",
       desc: "Rate vendors based on delivery timeliness, quality compliance, pricing competitiveness, and responsiveness with configurable scoring parameters.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: psrIcon,
+      width: "44px"
     },
     {
       key: 4,
       heading: "Contract",
       heading2: "Management",
       desc: "Store and manage vendor contracts, rate agreements, and service level agreements with renewal alerts, expiry notifications, and version-controlled documents.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: camIcon,
+      width: "44px"
     },
     {
       key: 5,
       heading: "Compliance &",
       heading2: "Document Tracking",
       desc: "Track vendor compliance documents — licenses, insurance, certifications, FSSAI — with expiry alerts and auto-blocking of non-compliant vendors.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: cdtIcon,
+      width: "44px"
     },
     {
       key: 6,
       heading: "Vendor",
       heading2: "Comparison Tools",
       desc: "Compare vendors across parameters — pricing, quality, lead time, payment terms — with visual comparison matrices for informed selection.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: vctIcon,
+      width: "44px"
     },
     {
       key: 7,
-      heading: "Preferred &",
-      heading2: "Blacklist Management",
+      heading: "Blacklist &",
+      heading2: "Preferred Management",
       desc: "Maintain preferred vendor lists and blacklist non-performing suppliers with documented reasons, ensuring procurement teams work with vetted partners.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: bpvmIcon,
+      width: "44px"
     },
     {
       key: 8,
       heading: "Payment History",
       heading2: "& Ledger",
       desc: "Track vendor-wise payment history, outstanding balances, and debit/credit notes with integration to Accounts & Finance for reconciliation.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: phlIcon,
+      width: "44px"
     },
     {
       key: 9,
       heading: "Vendor Communication",
       heading2: "Portal",
       desc: "Enable direct communication with vendors for quotation requests, order confirmations, and dispute resolution through a built-in messaging system.",
-      img: "/placeholders/icon.png",
-      width: "60px"
+      img: vcpIcon,
+      width: "44px"
     }
   ];
 
