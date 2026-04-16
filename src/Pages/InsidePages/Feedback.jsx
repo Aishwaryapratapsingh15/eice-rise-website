@@ -18,7 +18,7 @@ import bcmIcon from "../../assets/feedback/BCM.jpg"
 import beglIcon from "../../assets/feedback/BEGL.jpg"
 import boiIcon from "../../assets/feedback/BOI.jpg"
 import briIcon from "../../assets/feedback/BRI.jpg"
-import bsrIcon from "../../assets/feedback/BSR.JPG"
+import bsrIcon from "../../assets/feedback/BSR.jpg"
 
 
 const params = new URLSearchParams(window.location.search);
