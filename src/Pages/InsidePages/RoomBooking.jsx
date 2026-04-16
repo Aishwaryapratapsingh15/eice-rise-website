@@ -448,7 +448,10 @@ export default function RoomBooking() {
                     {benefits.map((item, index) =>
                     (
 
-                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+                        index % 2 === 0 ? (
+                            <div key={index} className="GlobalBenefitBox1">
+
+                        <div className='GlobalBenefitBox1'>
 
 
                             <div className="GlobalBenefitImgBox" >
@@ -461,7 +464,8 @@ export default function RoomBooking() {
                             </div>
 
 
-                        </div>) : (<div className='GlobalBenefitBox2'>
+                        </div></div>) : (<div key={index} className="GlobalBenefitBox1">
+<div className='GlobalBenefitBox2'>
 
 
                             <div className="GlobalBenefitImgBox">
@@ -474,7 +478,7 @@ export default function RoomBooking() {
                             </div>
 
 
-                        </div>)
+                        </div></div>)
 
 
                     ))}

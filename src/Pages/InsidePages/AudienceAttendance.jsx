@@ -275,6 +275,8 @@ export default function AudienceAttendance() {
 
           {benefits.map((item, index) =>
             index % 2 === 0 ? (
+              <div key={index} className="GlobalBenefitBox1">
+
               <div className="GlobalBenefitBox1">
                 <div className="GlobalBenefitImgBox">
                   <img src={item.img} style={{ width: "100%" }} />
@@ -283,8 +285,10 @@ export default function AudienceAttendance() {
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>
                   <div className={style.innerDescBenifit}>{item.desc}</div>
                 </div>
-              </div>
+              </div></div>
             ) : (
+              <div key={index} className="GlobalBenefitBox1">
+
               <div className="GlobalBenefitBox2">
                 <div className="GlobalBenefitImgBox">
                   <img src={item.img} style={{ width: "100%" }} />
@@ -293,7 +297,7 @@ export default function AudienceAttendance() {
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>
                   <div className={style.innerDescBenifit}>{item.desc}</div>
                 </div>
-              </div>
+              </div></div>
             )
           )}
         </div>
